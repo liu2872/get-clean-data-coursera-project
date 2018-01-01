@@ -30,15 +30,15 @@ result$activity <- factor(result$activity,
                                  levels = activity[, 1], labels = activity[, 2])
 # For the forth question: Appropriately labels the data set with descriptive variable names.
 I found all descriptive information in features file. Explanations are followings: 
-        1. tBodyAcc-XYZ: body acceleration signals time
-        2. tGravityAcc-XYZ: gravity acceleration signals time
-        3. tBodyAccJerk-XYZ: body linear acceleration obtains Jerk signals time
-        4. tBodyGyro-XYZ: body gyroscope signals time
-        5. tBodyGyroJerk-XYZ: body gyroscope obtains Jerk signals time
-        6. tBodyAccMag: magnitude of body acceleration signals time
-        7. tGravityAccMag: magnitude of gravity acceleration signals time
-        8. tBodyAccJerkMag: magnitude of body linear acceleration obtains Jerk signals time
-        9. tBodyGyroMag: magnitude of body gyroscope signals time
+       #1. tBodyAcc-XYZ: body acceleration signals time
+        #2. tGravityAcc-XYZ: gravity acceleration signals time
+        #3. tBodyAccJerk-XYZ: body linear acceleration obtains Jerk signals time
+        #4. tBodyGyro-XYZ: body gyroscope signals time
+        #5. tBodyGyroJerk-XYZ: body gyroscope obtains Jerk signals time
+        #6. tBodyAccMag: magnitude of body acceleration signals time
+        #7. tGravityAccMag: magnitude of gravity acceleration signals time
+        #8. tBodyAccJerkMag: magnitude of body linear acceleration obtains Jerk signals time
+        #9. tBodyGyroMag: magnitude of body gyroscope signals time
         10. tBodyGyroJerkMag: magnitude of body gyroscope obtains Jerk signals time
         11. fBodyAcc-XYZ: body acceleration signals frequency
         12. fBodyAccJerk-XYZ: body linear acceleration obtains Jerk signals frequency
