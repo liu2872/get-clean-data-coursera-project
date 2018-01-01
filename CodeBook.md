@@ -47,7 +47,8 @@ I found all descriptive information in features file. Explanations are following
    15. fBodyAccJerkMag: magnitude of body linear acceleration obtains Jerk signals frequency
    16. fBodyGyroMag: magnitude of body gyroscope signals frequency
    17. fBodyGyroJerkMag: magnitude of body gyroscope signals frequency
-   Then I used gsub function to replace indicators to actual names
+   
+Then I used gsub function to replace indicators to actual names
   resultCols = colnames(result)
   resultCols= gsub("[\\(\\)-]", "", resultCols)
   resultCols= gsub("^t", "time of ",resultCols)
