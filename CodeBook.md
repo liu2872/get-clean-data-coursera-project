@@ -48,17 +48,17 @@ I found all descriptive information in features file. Explanations are following
    16. fBodyGyroMag: magnitude of body gyroscope signals frequency
    17. fBodyGyroJerkMag: magnitude of body gyroscope signals frequency
 Then I used gsub function to replace indicators to actual names
-resultCols = colnames(result)
-resultCols= gsub("[\\(\\)-]", "", resultCols)
-resultCols= gsub("^t", "time of ",resultCols)
-resultCols= gsub("^f", "frequency of ", resultCols)
-resultCols= gsub("BodyBody", "Body", resultCols)
-resultCols= gsub("Body", "Body ", resultCols)
-resultCols= gsub("Acc", "Accelerometer ", resultCols)
-resultCols= gsub("Gyro", "Gyroscope ",resultCols)
-resultCols= gsub("Gravity", "Gravity ",resultCols)
-resultCols= gsub("Mag", "Magnitude ",resultCols)
-resultCols= gsub("Jerk", "to obtain Jerk ",resultCols)
+  resultCols = colnames(result)
+  resultCols= gsub("[\\(\\)-]", "", resultCols)
+  resultCols= gsub("^t", "time of ",resultCols)
+  resultCols= gsub("^f", "frequency of ", resultCols)
+  resultCols= gsub("BodyBody", "Body", resultCols)
+  resultCols= gsub("Body", "Body ", resultCols)
+  resultCols= gsub("Acc", "Accelerometer ", resultCols)
+  resultCols= gsub("Gyro", "Gyroscope ",resultCols)
+  resultCols= gsub("Gravity", "Gravity ",resultCols)
+  resultCols= gsub("Mag", "Magnitude ",resultCols)
+  resultCols= gsub("Jerk", "to obtain Jerk ",resultCols)
 colnames(result) <- resultCols
 
 # For the last questions: From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
