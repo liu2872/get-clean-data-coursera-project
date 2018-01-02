@@ -2,7 +2,7 @@
 
 To finish this project, I used package called dplyr and saved all related files in my local drive: 
 C:/WFH Cdrive/
-# For the first steps, I upload all files to R studio and rename tables by using read.table function. 
+# For the first step, I upload all files to R studio and rename tables by using read.table function. 
   peopleintestfolder=read.table("./test/subject_test.txt")
   resultintestfolder=read.table("./test/x_test.txt")
   activityintestfolder=read.table("./test/y_test.txt")
@@ -62,7 +62,7 @@ resultCols= gsub("Mag", "Magnitude ",resultCols)
 resultCols= gsub("Jerk", "to obtain Jerk ",resultCols)
 colnames(result) <- resultCols
 
-# For the last questions: From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+# For the last question: From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 resultMeans <- result %>% 
   group_by(subject, activity) %>%
   summarise_all(funs(mean))
